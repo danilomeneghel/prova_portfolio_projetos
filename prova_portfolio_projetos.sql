@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: 06-Dez-2019 às 01:08
+-- Generation Time: 06-Dez-2019 às 04:04
 -- Versão do servidor: 5.7.24
 -- versão do PHP: 7.2.14
 
@@ -69,19 +69,27 @@ INSERT INTO `pessoa` (`id`, `nome`, `datanascimento`, `cpf`, `funcionario`) VALU
 
 DROP TABLE IF EXISTS `projeto`;
 CREATE TABLE IF NOT EXISTS `projeto` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(200) COLLATE latin1_bin NOT NULL,
   `data_inicio` date DEFAULT NULL,
   `data_previsao_fim` date DEFAULT NULL,
   `data_fim` date DEFAULT NULL,
-  `descricao` varchar(5000) COLLATE latin1_bin DEFAULT NULL,
+  `descricao` varchar(500) COLLATE latin1_bin DEFAULT NULL,
   `status` varchar(45) COLLATE latin1_bin DEFAULT NULL,
   `orcamento` float DEFAULT NULL,
   `risco` varchar(45) COLLATE latin1_bin DEFAULT NULL,
-  `idgerente` int(11) NOT NULL,
+  `idgerente` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_gerente` (`idgerente`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_bin;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1 COLLATE=latin1_bin;
+
+--
+-- Extraindo dados da tabela `projeto`
+--
+
+INSERT INTO `projeto` (`id`, `nome`, `data_inicio`, `data_previsao_fim`, `data_fim`, `descricao`, `status`, `orcamento`, `risco`, `idgerente`) VALUES
+(3, 'Projeto A', '2019-12-01', '2020-01-31', '2020-02-01', 'qweadadasd', 'Em Análise', 50000, 'Baixo Risco', NULL),
+(4, 'Projeto B', '2019-11-20', '2020-03-01', '2020-03-15', 'qweqwewe', 'Em Andamento', 60000, 'Médio Risco', NULL);
 
 -- --------------------------------------------------------
 

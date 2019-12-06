@@ -39,7 +39,7 @@ public class ProjetoDaoImpl implements ProjetoDao {
 			parameterSource.addValue("data_inicio", projeto.getData_inicio());
 			parameterSource.addValue("data_previsao_fim", projeto.getData_previsao_fim());
 			parameterSource.addValue("data_fim", projeto.getData_fim());
-			parameterSource.addValue("descricao ", projeto.getDescricao ());
+			parameterSource.addValue("descricao", projeto.getDescricao());
 			parameterSource.addValue("status", projeto.getStatus());
 			parameterSource.addValue("orcamento", projeto.getOrcamento());
 			parameterSource.addValue("risco", projeto.getRisco());

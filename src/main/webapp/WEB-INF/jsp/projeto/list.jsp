@@ -22,9 +22,13 @@
   <tr>
    <th>ID</th>
    <th>Nome</th>
-   <th>Data Nasc</th>
-   <th>CPF</th>
-   <th>Funcionário</th>
+   <th>Data Inicio</th>
+   <th>Data Previsão Fim</th>
+   <th>Data Fim</th>
+   <th>Descrição</th>
+   <th>Status</th>
+   <th>Orçamento</th>
+   <th>Risco</th>
    <th colspan="2">Ação</th>
   </tr>
   <c:forEach items="${listProjeto }" var="projeto" >

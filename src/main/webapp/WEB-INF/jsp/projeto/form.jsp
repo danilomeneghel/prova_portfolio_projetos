@@ -52,7 +52,16 @@
    <tr>
     <td>Status: </td>
     <td>
-     <form:input path="status"/>
+     <form:select  path="status">
+    	<form:option value="Em Análise">Em Análise</form:option>
+    	<form:option value="Análise Realizada">Análise Realizada</form:option>
+    	<form:option value="Análise Aprovada">Análise Aprovada</form:option>
+    	<form:option value="Iniciado">Iniciado</form:option>
+    	<form:option value="Planejado">Planejado</form:option>
+    	<form:option value="Em Andamento">Em Andamento</form:option>
+    	<form:option value="Encerrado">Encerrado</form:option>
+    	<form:option value="Cancelado">Cancelado</form:option>
+  	 </form:select>
     </td>
    </tr>
    <tr>
@@ -64,7 +73,11 @@
    <tr>
     <td>Risco: </td>
     <td>
-     <form:input path="risco"/>
+     <form:select  path="risco">
+    	<form:option value="Baixo Risco">Baixo Risco</form:option>
+    	<form:option value="Médio Risco">Médio Risco</form:option>
+    	<form:option value="Alto Risco">Alto Risco</form:option>
+  	 </form:select>
     </td>
    </tr>
    <tr>
