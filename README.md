@@ -57,6 +57,9 @@ Abra o seu navegador o seguinte endereço: <br>
 
 http://localhost:8181/prova_portfolio_projetos
 
+- Usuário: admin
+- Senha: admin
+
 ## Licença
 
 Projeto licenciado sob <a href="LICENSE">The MIT License (MIT)</a>.
