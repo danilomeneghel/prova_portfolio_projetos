@@ -55,7 +55,7 @@ Ao concluir a configuração, crie um novo servidor web Apache Tomcat, associe a
 Após feito isso, é só colocar para rodar.<br>
 Abra o seu navegador o seguinte endereço: <br>
 
-http://localhost:8181/spring-mvc
+http://localhost:8181/prova_portfolio_projetos
 
 ## Licença
 
