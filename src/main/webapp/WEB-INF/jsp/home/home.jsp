@@ -10,9 +10,11 @@
 <body>
  <a href='<c:url value="/logout" />'>Logout</a>
  <br/>
- <a href='<c:url value="/pessoa/list" />'>Listar Pessoa</a>
- <br/>
  <a href='<c:url value="/projeto/list" />'>Listar Projetos</a>
+ <br/>
+ <a href='<c:url value="/pessoa/list" />'>Listar Pessoas</a>
+ <br/>
+ <a href='<c:url value="/membros/list" />'>Associar Membros</a>
  <br/>
  <a href='<c:url value="/user/list" />'>Listar Usuários</a>
  <h1>Seja bem-vindo, 
