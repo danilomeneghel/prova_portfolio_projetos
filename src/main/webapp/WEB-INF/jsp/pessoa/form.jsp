@@ -26,7 +26,7 @@
     </td>
    </tr>
    <tr>
-    <td>Data Nasc: </td>
+    <td>Data Nasc: (yyyy/mm/dd)</td>
     <td>
      <form:input path="datanascimento"/>
     </td>

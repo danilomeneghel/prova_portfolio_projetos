@@ -12,6 +12,8 @@
  <br/>
  <a href='<c:url value="/pessoa/list" />'>Listar Pessoa</a>
  <br/>
+ <a href='<c:url value="/projeto/list" />'>Listar Projetos</a>
+ <br/>
  <a href='<c:url value="/user/list" />'>Listar Usuários</a>
  <h1>Seja bem-vindo, 
  <c:if test="${pageContext.request.userPrincipal.name != null }">
