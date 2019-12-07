@@ -22,16 +22,12 @@
   <tr>
    <th>ID Projeto</th>
    <th>ID Pessoa</th>
-   <th colspan="2">Ação</th>
+   <th>Ação</th>
   </tr>
   <c:forEach items="${listMembros }" var="membros" >
    <tr>
     <td>${membros.idprojeto }</td>
     <td>${membros.idpessoa }</td>
-    <td>
-     <spring:url value="/membros/update/${membros.idprojeto }/${membros.idpessoa }" var="updateURL" />
-     <a href="${updateURL }">Atualizar</a>
-    </td>
     <td>
      <spring:url value="/membros/delete/${membros.idprojeto }/${membros.idpessoa }" var="deleteURL" />
      <a href="${deleteURL }">Excluir</a>

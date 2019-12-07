@@ -65,6 +65,7 @@ public class MembrosDaoImpl implements MembrosDao {
 	public void addMembros(Membros membros) {
 		String sql = "INSERT INTO membros(idprojeto, idpessoa) VALUES(:idprojeto, :idpessoa)";
 
+		System.out.print(sql);
 		namedParameterJdbcTemplate.update(sql, getSqlParameterByModel(membros));
 	}
 

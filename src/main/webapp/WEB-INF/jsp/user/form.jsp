@@ -55,8 +55,7 @@
      <button type="submit">Salvar</button>
     </td>
    </tr>
-  </table>
-  
+  </table>  
  </form:form>
  
 </body>

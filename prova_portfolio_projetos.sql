@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: 06-Dez-2019 às 04:04
+-- Generation Time: 07-Dez-2019 às 03:29
 -- Versão do servidor: 5.7.24
 -- versão do PHP: 7.2.14
 
@@ -31,10 +31,17 @@ SET time_zone = "+00:00";
 DROP TABLE IF EXISTS `membros`;
 CREATE TABLE IF NOT EXISTS `membros` (
   `idprojeto` int(20) NOT NULL,
-  `idpessoa` int(20) NOT NULL,
-  PRIMARY KEY (`idprojeto`),
-  KEY `fk_pessoa` (`idpessoa`)
+  `idpessoa` int(20) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_bin;
+
+--
+-- Extraindo dados da tabela `membros`
+--
+
+INSERT INTO `membros` (`idprojeto`, `idpessoa`) VALUES
+(3, 2),
+(4, 1),
+(3, 1);
 
 -- --------------------------------------------------------
 
@@ -50,7 +57,7 @@ CREATE TABLE IF NOT EXISTS `pessoa` (
   `cpf` varchar(14) COLLATE latin1_bin DEFAULT NULL,
   `funcionario` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1 COLLATE=latin1_bin;
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=latin1 COLLATE=latin1_bin;
 
 --
 -- Extraindo dados da tabela `pessoa`
@@ -119,8 +126,7 @@ INSERT INTO `users` (`id`, `name`, `email`, `address`, `username`, `password`) V
 (16, 'Helena', 'helena@aaaaaa.com', 'asdasasd', 'helena', '$2a$10$OvBY/HcfMmvMdk68F/TH0evD8llh5rigDMKUqZcvVOw.fTXXrJrZu'),
 (17, 'José da Silva', 'jose@silva.com', 'wwwwwwwww', 'jose', '$2a$10$FZLF.BcsKfMdWRvHl2ZHLObToWj8vOZ.4v9X8u9LocmC3H7jCN3Xy'),
 (18, 'Mariana', 'mariana@mmmmm.com', 'asdasdasdasd', 'mariana', '$2a$10$CWn4Zo/J2AXfQ2TsBK4Lm.OTm0Q7TAE4McZn/mEsE91gY17qWyQCG'),
-(19, 'Larissa', 'larissa@aaaaa.com', 'asdasdasd', 'larissa', '$2a$10$rBc1FbGtHyWuq7n7y2o20euyCkaoQyrXWIEvle8Qxgg3Eb0DqYN8u'),
-(20, 'teste2', 'teste@teste.com', 'eeeeeeeeeeeee', 'teste', '$2a$10$oDEY3DA9KRmw4en3qL0l5eGomhCRygAIj997gf7P3OliRInyAtNtS');
+(19, 'Larissa', 'larissa@aaaaa.com', 'asdasdasd', 'larissa', '$2a$10$rBc1FbGtHyWuq7n7y2o20euyCkaoQyrXWIEvle8Qxgg3Eb0DqYN8u');
 
 -- --------------------------------------------------------
 

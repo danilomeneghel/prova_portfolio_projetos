@@ -49,7 +49,7 @@ public class MembrosController {
 		model.addObject("membrosForm", new Membros());
 		model.addObject("listProjetos", listProjetos);
 		model.addObject("listPessoas", listPessoas);
-		
+				
 		return model;
 	}
 
@@ -68,13 +68,8 @@ public class MembrosController {
 
 	@RequestMapping(value = "/save", method = RequestMethod.POST)
 	public ModelAndView save(@ModelAttribute("membros") Membros membros) {
-
-		if (membros != null && membros.getIdprojeto() != null) {
-			membrosService.updateMembros(membros);
-		} else {
-			membrosService.addMembros(membros);
-		}
-
+		membrosService.addMembros(membros);
+		
 		return new ModelAndView("redirect:/membros/list");
 	}
 

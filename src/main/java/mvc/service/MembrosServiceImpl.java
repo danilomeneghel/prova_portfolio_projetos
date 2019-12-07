@@ -23,6 +23,8 @@ public class MembrosServiceImpl implements MembrosService {
 	}
 
 	public void addMembros(Membros membros) {
+		System.out.println(membros);
+		
 		membrosDao.addMembros(membros);
 	}
 
